@@ -1,0 +1,14 @@
+
+
+<div>
+	this is the pokemon view
+	<p>@ViewBag.poke["name"]</p>
+
+	@{
+		foreach (KeyValuePair<string, object> entry in ViewBag.poke)
+		{
+			<p>@entry.Key.ToString() -- @entry.Value.ToString()</p>
+			<p></p>
+		}
+	}
+</div>
